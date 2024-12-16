@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario de contacto</h1>
+    <form action="procesar.php" method="post">
+        <!--Campos de texto-->
+        <label for="nombre">Nombres:</label>
+        <input type="text" name="nombres" id="nombre">
+        <br><br>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" name="apellidos" id="apellidos">
+        <br><br>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" name="email" id="email">
+        <br><br>
+        <label for="celular">Celular:</label>
+        <input type="tel" name="celular" id="celular">
+        <br><br>
+        <label for="observaciones">Observaciones:</label>
+        <br>
+        <textarea name="observaciones" id="observaciones" rows="5" cols="40"></textarea>
+        <br><br>
+        <input type="submit" value="Enviar Datos">
+
+
+    </form>
+</body>
+</html>

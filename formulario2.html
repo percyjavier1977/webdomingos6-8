@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario do contacto</h1>
+    <form action="datos.php" method="post">
+        
+        <input type="text" name="nombres" id="nombres" required placeholder="Ingrese su nombre:">
+        <br><br>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" name="apellidos" id="apellidos" required>
+        <br><br>
+        <label for="password">Contraseña:</label>
+        <input type="password" name="password" id="password" required>
+        <br><br>
+        <!--Selector o Lista-->
+        <label for="pais">País:</label>
+        <select name="pais" id="pais">
+            <option value="peru">Perú</option>
+            <option value="ecuador">Ecuador</option>
+            <option value="colombia" selected>Colombia</option>
+            <option value="brasil">Brasil</option>
+        </select>
+        <br><br>
+        <!--Botón radio-->
+        <fieldset>
+            <legend>Seleccione su género</legend>
+            <input type="radio" name="genero" id="masculino" value="masculino">
+            <label for="genero">Masculino:</label>
+
+            <input type="radio" name="genero" id="genero" value="femenino">
+            <label for="femenino">Femenino:</label>
+
+            <input type="radio" name="genero" id="otro" value="otro">
+            <label for="otro">Otro:</label>
+       
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Estudio:</legend>
+            <input type="radio" name="estudio" id="secundaria" value="secundaria">
+            <label for="secundaria">Secundaria:</label>
+
+            <input type="radio" name="estudio" id="tecnico" value="tecnico" checked>
+            <label for="tecnico">Técnico:</label>
+
+            <input type="radio" name="estudio" id="superior" value="superior">
+            <label for="superior">Superior:</label>
+
+        </fieldset>
+        <br><br>
+
+        <!--Casilla de verificación-->
+        <fieldset>
+            <legend>Grado de estudio</legend>
+            <input type="checkbox" name="grado" id="bachiller" value="bachiller" >
+            <label for="bachiller">Bachiller</label>
+
+            <input type="checkbox" name="gardo" id="lincenciado" value="licenciado">
+            <label for="licenciado">Licenciado</label>
+
+            <input type="checkbox" name="grado" id="maestria" value="maestria" checked>
+            <label for="maestria">Bachiller</label>
+        </fieldset>
+        <br><br>
+        <label for="nacimiento">Fecha de nacimimento:</label>
+        <input type="date" name="nacimiento" id="nancimiento">
+        <br><br>
+
+        <label for="obs">Observaciones</label><br>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Escriba aquí su comentario"></textarea>
+
+        <button type="submit">Enviar datos</button>
+        <br>
+        <button type="reset">Limpiar datos</button>
+    </form>
+</body>
+</html>
