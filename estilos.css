@@ -20,6 +20,15 @@ nav a{
 .seccion1{
     background-color: blueviolet;
 }
+.seccion1 h2 {
+    color: white;
+}
+.seccion1 p {
+    color: white;
+}
+
+
+
 .seccion2{
     background-color: rgb(167, 77, 250);
 }
