@@ -1,0 +1,42 @@
+/*Selector o estilos de elemento*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(220, 220, 220);
+}
+
+h1{
+    color: brown;
+    text-decoration: underline;
+
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.5;
+    color: brown;
+
+
+}
+
+/*Selector de clase*/
+.parrafo_color{
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    line-height: 2.0;
+}
+
+/*estilod de ID*/
+#alinear_parrafo{
+    text-align: right;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+/*Selector de atributo*/
+button[type="submit"]{
+    background-color: rgb(33, 0, 64);
+    color: white;
+}

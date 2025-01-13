@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .padre{
+            background-color: lightblue;
+            padding: 20px;
+            border: 2px solid blue;
+            color: brown;
+            text-align: center;
+        }
+        .padre .hijo{
+            background-color: lightgreen;
+            padding: 15px;
+            border:  2px solid green;
+        }
+        .padre .hijo .nieto{
+            background-color: lightcoral;
+            padding: 10px;
+            border: 2px solid red;
+        }
+
+        .padre .hijo .nieto p{
+            color: darkblue;
+            text-align: right;
+        }
+
+        .padre .hijo p{
+            color: green;
+        }
+
+       
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="padre">
+        <p>este es un elemento <strong>Padre</strong>.</p>
+        <div class="hijo">
+            <p>este es elemento <strong>Hijo</strong>.</p>
+            <div class="nieto">
+                <p>este es un elemnto <strong>Nieto</strong>.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
